@@ -2,6 +2,207 @@
 {% extends "layouts/project.html" %}
 
 <!-- Setting up variables to customize "project" details to be specific to index page -->
-{% set project = "Portfolio" %}
-{% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
-{% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
+{% set project = "Algorithms" %}
+
+{% block style %}
+    :root{
+        --white: whitesmoke;
+        --black: black;
+        --grey: grey;
+    }
+
+    /* Set the text color to white */
+    body {
+        background-image: url('aws.png');
+        background-size: cover; /* Adjust as needed */
+        background-repeat: repeat; /* Adjust as needed */
+        color: white; /* Text color */
+    }
+
+    h1{
+        font-size: 5em;
+    }
+
+    a {
+        color: #808080; /* Change to the color you want */
+        text-decoration: none; /* Remove underlines by default */
+    }
+
+    /* Style visited links */
+    a:visited {
+        color: #666464; /* Change to the color you want for visited links */
+    }
+
+    /* Style links on hover */
+    a:hover {
+        color: #9e9d9d; /* Change to the color you want on hover */
+        text-decoration: underline; /* Add underlines on hover if desired */
+    }
+
+    .fa{
+        font-size: 3em;
+        letter-spacing: 1em;
+        transition: all .2s;
+        color: white;
+    }
+
+    .fa:hover{
+        transform: translateY(10px);
+    }
+
+    .fa-youtube-play:hover{
+        color: #cc0000;
+    }
+
+    .fa-twitter:hover{
+        color: #1da1f2;
+    }
+
+    .fa-github:hover{
+        color: #000000;
+    }
+
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+        color: white;
+        font-size: 2.5em;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+    }
+
+    /* Set the border properties for the text elements */
+    .overview {
+        position: relative; /* Create a relative positioning context */
+    }
+
+    .overview {
+        border: 10px solid transparent; /* Transparent border initially */
+        border-radius: 10px; /* Rounded corners */
+        padding: 30px 20px; /* Adjust padding for text */
+        margin: 0; /* Remove default margin */
+        margin-bottom: 20px; /* Add margin to create space between text and buttons */
+        color: white; /* Set text color to white */
+        background-clip: padding-box; /* Clip background to padding box */
+    }
+
+    .border-fill {
+        background-color: rgba(10, 30, 48, 0.8); /* Background color for border fill */
+        position: absolute; /* Position behind text elements */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1; /* Place it behind the text elements */
+        border-radius: 10px; /* Rounded corners */
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .row{
+        margin: auto;
+    }
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Wait for the document to be fully loaded before adding the event listener
+            var overviewScrollButton = document.getElementById('overviewScrollButton');
+            if (overviewScrollButton) {
+                overviewScrollButton.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent the default behavior of the anchor link
+                    var overviewSection = document.getElementById('overviewSection');
+                    if (overviewSection) {
+                        overviewSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+        });
+    </script>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row justify-content-end" style="padding: 2%;">
+        <div class="col-2" style="text-align: right;">
+            {% block info %}
+                <!-- notice jinja style variables used in href's -->
+                <a><h5>{{basename}}</h5></a>
+                <a href={{github}} target="_blank"><i class="fa fa-github"></i></a>
+            {% endblock %}
+        </div>
+    </div>
+
+    <div class="product" style="margin-top: 2%;">
+        <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
+
+            <div class="col-8" >
+                <h1>{{ project }} Project</h1>
+            </div>
+
+        </div>
+
+        <br>
+
+        <br>
+
+        <br>
+
+    <div class="overview">
+        <div class="border-fill"></div>
+            <p>Algorithms are a set of instructions that are used to perform a specific task. They are used in many different areas of computer science, such as searching, sorting, and graph traversal. In this project, we will explore some of the most common algorithms and how they work.</p>
+            <h2>Sorting Algorithms</h2>
+            <p>Sorting algorithms are used to arrange a list of items in a specific order. There are many different sorting algorithms, each with its own advantages and disadvantages. Some of the most common sorting algorithms include:</p>
+            <ul>
+                <li>Bubble Sort</li>
+                <li>Selection Sort</li>
+                <li>Insertion Sort</li>
+                <li>Merge Sort</li>
+                <li>Quick Sort</li>
+            </ul>
+            <h2>Searching Algorithms</h2>
+            <p>Searching algorithms are used to find a specific item in a list of items. There are many different searching algorithms, each with its own advantages and disadvantages. Some of the most common searching algorithms include:</p>
+            <ul>
+                <li>Linear Search</li>
+                <li>Binary Search</li>
+                <li>Depth-First Search</li>
+                <li>Breadth-First Search</li>
+            </ul>
+            <h2>How I will incorperate algorithms into my final</h2>
+            <p>For my final project, I plan to incorporate algorithms into a language learning assistant. The assistant will recommend learning materials (e.g., textbooks, podcasts, language exchange websites) based on the user's proficiency level, learning style, and interests. The system will incorporate language proficiency assessments and adaptive learning techniques to tailor recommendations to each user.</p>
+            <h3>Features</h3>
+            <ul>
+                <li>Filters for specific learning materials</li>
+                <li>Filter for proficiency level</li>
+                <li>Possible tests to determine proficiency and understanding</li>
+            </ul>
+
+    </div>
+
+</div>
+
+
+
+<footer>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <a href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        </div>
+    </div>
+</footer>
+</div>
+
+{% endblock %}
