@@ -78,16 +78,20 @@ class User(db.Model):
     _uid = db.Column(db.String(255), unique=True, nullable=False)
     _password = db.Column(db.String(255), unique=False, nullable=False)
     _dob = db.Column(db.Date)
+    _prof = db.Column(db.String(255), default='novice')
+    _lang = db.Column(db.String(255), default='es')
     
     # Defines a relationship between User record and Notes table, one-to-many (one user to many notes)
     posts = db.relationship("Post", cascade='all, delete', backref='users', lazy=True)
 
     # constructor of a User object, initializes the instance variables within object (self)
-    def __init__(self, name, uid, password="123qwerty", dob=date.today()):
+    def __init__(self, name, uid, password="123qwerty", dob=date.today(), prof="novice", lang="es"):
         self._name = name    # variables with self prefix become part of the object, 
         self._uid = uid
         self.set_password(password)
         self._dob = dob
+        self._prof = prof
+        self._lang = lang
 
     # a name getter method, extracts name from object
     @property
@@ -143,6 +147,22 @@ class User(db.Model):
     def age(self):
         today = date.today()
         return today.year - self._dob.year - ((today.month, today.day) < (self._dob.month, self._dob.day))
+
+    @property
+    def prof(self):
+        return self._prof
+    
+    @prof.setter
+    def prof(self, prof):
+        self._prof = prof
+
+    @property
+    def lang(self):
+        return self._lang
+    
+    @lang.setter
+    def lang(self, lang):
+        self._lang = lang
     
     # output content using str(object) in human readable form, uses getter
     # output content using json dumps, this is ready for API response
@@ -169,13 +189,15 @@ class User(db.Model):
             "name": self.name,
             "uid": self.uid,
             "dob": self.dob,
+            "prof": self.prof,
+            "lang": self.lang,
             "age": self.age,
             "posts": [post.read() for post in self.posts]
         }
 
     # CRUD update: updates user name, password, phone
     # returns self
-    def update(self, name="", uid="", password=""):
+    def update(self, name="", uid="", password="", prof="", lang=""):
         """only updates values with length"""
         if len(name) > 0:
             self.name = name
@@ -183,6 +205,10 @@ class User(db.Model):
             self.uid = uid
         if len(password) > 0:
             self.set_password(password)
+        if len(prof) > 0:
+            self.prof = prof
+        if len(lang) > 0:
+            self.lang = lang
         db.session.commit()
         return self
 
@@ -203,8 +229,8 @@ def initUsers():
         """Create database and tables"""
         db.create_all()
         """Tester data for table"""
-        u1 = User(name='Thomas Edison', uid='toby', password='123toby', dob=date(1847, 2, 11))
-        u2 = User(name='Nicholas Tesla', uid='niko', password='123niko', dob=date(1856, 7, 10))
+        u1 = User(name='Thomas Edison', uid='toby', password='123toby', dob=date(1847, 2, 11), prof='native', lang='es')
+        u2 = User(name='Nicholas Tesla', uid='niko', password='123niko', dob=date(1856, 7, 10), prof='beginner', lang='fr')
         u3 = User(name='Alexander Graham Bell', uid='lex')
         u4 = User(name='Grace Hopper', uid='hop', password='123hop', dob=date(1906, 12, 9))
         users = [u1, u2, u3, u4]
