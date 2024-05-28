@@ -26,7 +26,7 @@ class TestListAPI:
                         next(test_reader)
                         # Get the first question
                         first_question = next(test_reader)[0]
-                        tests.append(f"{first_question}, level {row['Level']}")
+                        tests.append(f"{first_question}, {row['Level']}")
             if not tests:
                 return {'message': 'No tests found'}, 404
             return jsonify(tests)
