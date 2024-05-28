@@ -1,0 +1,5 @@
+Name,Language,Level,Path
+Grammar,ES,novice,tests/spanish/grammar/novice.csv
+Vocabulary,FR,intermediate,tests/french/vocab/intermediate.csv
+Fill In the Blank,ES,native,tests/spanish/fib/native.csv
+Grammar,FR,intermediate,tests/french/grammar/intermediate.csv
