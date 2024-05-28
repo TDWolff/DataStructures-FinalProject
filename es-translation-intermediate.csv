@@ -1,0 +1,23 @@
+# Intermediate vocabulary data
+intermediate_data = {
+    "English": ["To learn", "To read", "To write", "To speak", "To listen", "To understand", "To work", "To play", 
+                "To travel", "To eat", "To drink", "To live", "To need", "To want", "To like", "To love", "To feel", 
+                "To think", "To know", "To understand", "Beautiful", "Difficult", "Easy", "Interesting", "Boring", 
+                "Expensive", "Cheap", "Important", "Dangerous", "Safe", "Early", "Late", "Sometimes", "Always", 
+                "Never", "Usually", "Quickly", "Slowly", "Rarely", "Suddenly", "Almost", "Already"],
+    "Spanish": ["Aprender", "Leer", "Escribir", "Hablar", "Escuchar", "Entender", "Trabajar", "Jugar", 
+                "Viajar", "Comer", "Beber", "Vivir", "Necesitar", "Querer", "Gustar", "Amar", "Sentir", 
+                "Pensar", "Saber", "Comprender", "Hermoso", "Difícil", "Fácil", "Interesante", "Aburrido", 
+                "Caro", "Barato", "Importante", "Peligroso", "Seguro", "Temprano", "Tarde", "A veces", "Siempre", 
+                "Nunca", "Usualmente", "Rápidamente", "Lentamente", "Raramente", "De repente", "Casi", "Ya"],
+    "Type": ["translation"] * 42
+}
+
+# Create a DataFrame for the intermediate vocabulary
+intermediate_df = pd.DataFrame(intermediate_data)
+
+# Save the intermediate DataFrame to a CSV file
+intermediate_file_path = '/mnt/data/duolingo_spanish_vocabulary_intermediate.csv'
+intermediate_df.to_csv(intermediate_file_path, index=False)
+
+intermediate_file_path
