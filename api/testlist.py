@@ -30,5 +30,26 @@ class TestListAPI:
             if not tests:
                 return {'message': 'No tests found'}, 404
             return jsonify(tests)
-    
+    class _tests(Resource):
+        def post(self):
+            body = request.get_json()
+            if body is None:
+                return {'message': 'No data provided'}, 400
+            if 'Path' not in body:
+                return {'message': 'Path not provided'}, 400
+            path = body['Path']
+            try:
+                with open(path, 'r') as f:
+                    reader = csv.reader(f)
+                    # Skip the first three lines
+                    for _ in range(3):
+                        next(reader)
+                    # Skip the header row
+                    next(reader)
+                    # Get all remaining lines
+                    questions = [row for row in reader]
+                    return jsonify(questions)
+            except FileNotFoundError:
+                return {'message': 'File not found'}, 404
     api.add_resource(_tlist, '/testlist')
+    api.add_resource(_tests, '/test')
