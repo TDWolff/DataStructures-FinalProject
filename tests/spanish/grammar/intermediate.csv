@@ -1,21 +1,23 @@
 Name
 Spanish Grammar Test
 
-Question in Spanish,Answer in English,Type
-Yo hablé con ella ayer,I spoke with her yesterday.,grammar
-Cuando era niño; jugaba al fútbol, When I was a child; I used to play soccer,grammar
-Yo iré a la playa mañana,I will go to the beach tomorrow,grammar
-Me gustaría ir a España,I would like to go to Spain,grammar
-Espero que tengas un buen día,I hope you have a good day,grammar
-Él me lo dio,He gave it to me,grammar
-Me levanto a las seis de la mañana,I get up at six in the morning,grammar
-Trabajo por el dinero/Esto es para ti,I work for money/This is for you,grammar
-He visto esa película,I have seen that movie,grammar
-He comido demasiado,I have eaten too much,grammar
-Había terminado el trabajo,I had finished the work,grammar
-Habré terminado para las cinco,I will have finished by five,grammar
-Habría ido si hubiera tenido tiempo,I would have gone if I had had time,grammar
-La chica que vive aquí es mi amiga,The girl who lives here is my friend,grammar
-¡Haz tu tarea!,Do your homework!,grammar
+Sentence,Question,Option_1,Option_2,Correct_Option
+Había terminado el trabajo.,What tense is this?,Past Perfect,Present Perfect,Past Perfect
+Habré terminado para las cinco.,What tense is this?,Future Perfect,Past Perfect,Future Perfect
+Espero que tengas un buen día.,What mood is this?,Subjunctive,Indicative,Subjunctive
+Si tuviera dinero; compraría una casa.,What mood is this?,Conditional,Subjunctive,Subjunctive
+Él ha comido demasiado.,What tense is this?,Present Perfect,Future Perfect,Present Perfect
+Nosotros habíamos ido al cine.,What tense is this?,Past Perfect,Present Perfect,Past Perfect
+Cuando llegué; ella ya se había ido.,What tense is this?,Past Perfect,Present Perfect,Past Perfect
+Para entonces; habré terminado.,What tense is this?,Future Perfect,Present Perfect,Future Perfect
+Dudo que él venga.,What mood is this?,Subjunctive,Indicative,Subjunctive
+Ojalá que llueva mañana.,What mood is this?,Subjunctive,Indicative,Subjunctive
+Ella había dicho la verdad.,What tense is this?,Past Perfect,Present Perfect,Past Perfect
+Nosotros habremos estudiado mucho.,What tense is this?,Future Perfect,Past Perfect,Future Perfect
+Tú habrías ido si pudieras.,What tense is this?,Conditional Perfect,Future Perfect,Conditional Perfect
+Es posible que él venga.,What mood is this?,Subjunctive,Indicative,Subjunctive
+No creo que ella lo sepa.,What mood is this?,Subjunctive,Indicative,Subjunctive
+A menos que él lo haga.,What mood is this?,Subjunctive,Indicative,Subjunctive
+
 
 

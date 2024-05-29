@@ -2,47 +2,46 @@ Name
 Spanish Vocab Test
 
 
-English,Spanish,Type
-Hello,Hola,translation
-Good morning,Buenos días,translation
-Apple,Manzana,translation
-Dog,Perro,translation
-Cat,Gato,translation
-Thank you,Gracias,translation
-Please,Por favor,translation
-Yes,Sí,translation
-No,No,translation
-House,Casa,translation
-Water,Agua,translation
-Book,Libro,translation
-Car,Coche,translation
-Food,Comida,translation
-How are you?,¿Cómo estás?,translation
-I'm fine,Estoy bien,translation
-Friend,Amigo,translation
-Family,Familia,translation
-Where is the bathroom?,¿Dónde está el baño?,translation
-My name is,Me llamo,translation
-Goodbye,Adiós,translation
-See you later,Hasta luego,translation
-Excuse me,Perdón,translation
-I'm sorry,Lo siento,translation
-What is your name?,¿Cómo te llamas?,translation
-Nice to meet you,Mucho gusto,translation
-I don't understand,No entiendo,translation
-Can you help me?,¿Puedes ayudarme?,translation
-How much does it cost?,¿Cuánto cuesta?,translation
-Where is the station?,¿Dónde está la estación?,translation
-What time is it?,¿Qué hora es?,translation
-I need,Necesito,translation
-I want,Quiero,translation
-I like,Me gusta,translation
-I'm hungry,Tengo hambre,translation
-I'm thirsty,Tengo sed,translation
-What,¿Qué?,translation
-Where,¿Dónde?,translation
-When,¿Cuándo?,translation
-Why,¿Por qué?,translation
-Who,¿Quién?,translation
-Which,¿Cuál?,translation
-How,¿Cómo?,translation
+Question,Option_1,Option_2,Correct_Option
+Translate "To learn" into Spanish.,Estudiar,Aprender,Aprender
+Translate "To read" into Spanish.,Escribir,Leer,Leer
+Translate "To write" into Spanish.,Hablar,Escribir,Escribir
+Translate "To speak" into Spanish.,Leer,Hablar,Hablar
+Translate "To listen" into Spanish.,Escuchar,Hablar,Escuchar
+Translate "To understand" into Spanish.,Comprender,Estudiar,Comprender
+Translate "To work" into Spanish.,Trabajar,Comer,Trabajar
+Translate "To play" into Spanish.,Jugar,Leer,Jugar
+Translate "To travel" into Spanish.,Viajar,Escribir,Viajar
+Translate "To eat" into Spanish.,Beber,Comer,Comer
+Translate "To drink" into Spanish.,Comer,Beber,Beber
+Translate "To live" into Spanish.,Vivir,Estudiar,Vivir
+Translate "To need" into Spanish.,Querer,Necesitar,Necesitar
+Translate "To want" into Spanish.,Necesitar,Querer,Querer
+Translate "To like" into Spanish.,Gustar,Odio,Gustar
+Translate "To love" into Spanish.,Amar,Odio,Amar
+Translate "To feel" into Spanish.,Sentir,Dormir,Sentir
+Translate "To think" into Spanish.,Pensar,Correr,Pensar
+Translate "To know" into Spanish.,Saber,Conocer,Saber
+Translate "To understand" into Spanish.,Entender,Escuchar,Entender
+Translate "Beautiful" into Spanish.,Bonito,Feo,Bonito
+Translate "Difficult" into Spanish.,Difícil,Fácil,Difícil
+Translate "Easy" into Spanish.,Fácil,Difícil,Fácil
+Translate "Interesting" into Spanish.,Interesante,Aburrido,Interesante
+Translate "Boring" into Spanish.,Aburrido,Interesante,Aburrido
+Translate "Expensive" into Spanish.,Caro,Barato,Caro
+Translate "Cheap" into Spanish.,Barato,Caro,Barato
+Translate "Important" into Spanish.,Importante,Peligroso,Importante
+Translate "Dangerous" into Spanish.,Peligroso,Seguro,Peligroso
+Translate "Safe" into Spanish.,Seguro,Peligroso,Seguro
+Translate "Early" into Spanish.,Temprano,Tarde,Temprano
+Translate "Late" into Spanish.,Tarde,Temprano,Tarde
+Translate "Sometimes" into Spanish.,A veces,Siempre,A veces
+Translate "Always" into Spanish.,Siempre,A veces,Siempre
+Translate "Never" into Spanish.,Nunca,Siempre,Nunca
+Translate "Usually" into Spanish.,Usualmente,Nunca,Usualmente
+Translate "Quickly" into Spanish.,Rápidamente,Lentamente,Rápidamente
+Translate "Slowly" into Spanish.,Lentamente,Rápidamente,Lentamente
+Translate "Rarely" into Spanish.,Raramente,A veces,Raramente
+Translate "Suddenly" into Spanish.,De repente,Lentamente,De repente
+Translate "Almost" into Spanish.,Casi,Ya,Casi
+Translate "Already" into Spanish.,Ya,A veces,Ya

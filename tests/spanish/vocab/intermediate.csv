@@ -1,48 +1,46 @@
 Name
 Spanish Vocab Test
 
-English,Spanish,Type
-To learn,Aprender,translation
-To read,Leer,translation
-To write,Escribir,translation
-To speak,Hablar,translation
-To listen,Escuchar,translation
-To understand,Entender,translation
-To work,Trabajar,translation
-To play,Jugar,translation
-To travel,Viajar,translation
-To eat,Comer,translation
-To drink,Beber,translation
-To live,Vivir,translation
-To need,Necesitar,translation
-To want,Querer,translation
-To like,Gustar,translation
-To love,Amar,translation
-To feel,Sentir,translation
-To think,Pensar,translation
-To know,Saber,translation
-To understand,Comprender,translation
-Beautiful,Hermoso,translation
-Difficult,Difícil,translation
-Easy,Fácil,translation
-Interesting,Interesante,translation
-Boring,Aburrido,translation
-Expensive,Caro,translation
-Cheap,Barato,translation
-Important,Importante,translation
-Dangerous,Peligroso,translation
-Safe,Seguro,translation
-Early,Temprano,translation
-Late,Tarde,translation
-Sometimes,A veces,translation
-Always,Siempre,translation
-Never,Nunca,translation
-Usually,Usualmente,translation
-Quickly,Rápidamente,translation
-Slowly,Lentamente,translation
-Rarely,Raramente,translation
-Suddenly,De repente,translation
-Almost,Casi,translation
-Already,Ya,translation
-
-
+Question,Option_1,Option_2,Correct_Option
+Translate "To learn" into Spanish.,Aprender,Escribir,Aprender
+Translate "To read" into Spanish.,Leer,Vivir,Leer
+Translate "To write" into Spanish.,Comer,Escribir,Escribir
+Translate "To speak" into Spanish.,Hablar,Escuchar,Hablar
+Translate "To listen" into Spanish.,Escuchar,Jugar,Escuchar
+Translate "To understand" into Spanish.,Entender,Trabajar,Entender
+Translate "To work" into Spanish.,Viajar,Trabajar,Trabajar
+Translate "To play" into Spanish.,Beber,Jugar,Jugar
+Translate "To travel" into Spanish.,Viajar,Comer,Viajar
+Translate "To eat" into Spanish.,Vivir,Comer,Comer
+Translate "To drink" into Spanish.,Beber,Necesitar,Beber
+Translate "To live" into Spanish.,Vivir,Querer,Vivir
+Translate "To need" into Spanish.,Gustar,Necesitar,Necesitar
+Translate "To want" into Spanish.,Querer,Amar,Querer
+Translate "To like" into Spanish.,Sentir,Gustar,Gustar
+Translate "To love" into Spanish.,Amar,Pensar,Amar
+Translate "To feel" into Spanish.,Sentir,Saber,Sentir
+Translate "To think" into Spanish.,Pensar,Comprender,Pensar
+Translate "To know" into Spanish.,Saber,Hermoso,Saber
+Translate "To understand" into Spanish.,Comprender,Difícil,Comprender
+Translate "Beautiful" into Spanish.,Hermoso,Fácil,Hermoso
+Translate "Difficult" into Spanish.,Difícil,Interesante,Difícil
+Translate "Easy" into Spanish.,Fácil,Aburrido,Fácil
+Translate "Interesting" into Spanish.,Interesante,Caro,Interesante
+Translate "Boring" into Spanish.,Aburrido,Barato,Aburrido
+Translate "Expensive" into Spanish.,Caro,Importante,Caro
+Translate "Cheap" into Spanish.,Barato,Peligroso,Barato
+Translate "Important" into Spanish.,Importante,Seguro,Importante
+Translate "Dangerous" into Spanish.,Peligroso,Temprano,Peligroso
+Translate "Safe" into Spanish.,Seguro,Tarde,Seguro
+Translate "Early" into Spanish.,Temprano,A veces,Temprano
+Translate "Late" into Spanish.,Tarde,Siempre,Tarde
+Translate "Sometimes" into Spanish.,A veces,Nunca,A veces
+Translate "Always" into Spanish.,Siempre,Usualmente,Siempre
+Translate "Never" into Spanish.,Nunca,Rápidamente,Nunca
+Translate "Usually" into Spanish.,Usualmente,Lentamente,Usualmente
+Translate "Quickly" into Spanish.,Rápidamente,Raramente,Rápidamente
+Translate "Slowly" into Spanish.,Lentamente,De repente,Lentamente
+Translate "Rarely" into Spanish.,Raramente,Casi,Raramente
+Translate "Suddenly" into Spanish.,De repente,Ya,De repente
+Translate "Almost" into Spanish.,Casi,Ya,Casi
+Translate "Already" into Spanish.,Ya,A veces,Ya

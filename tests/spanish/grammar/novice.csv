@@ -1,21 +1,15 @@
 Name
 Spanish Grammar Test
 
-Question in Spanish,Answer in English,Type
-Yo hablo español,I speak Spanish.,grammar
-El libro (masculine)/La mesa (feminine),The book/The table,grammar
-El perro/Los perros,The dog/The dogs,grammar
-El/La/Los/Las,The(masculine/feminine/plural),grammar
-Un/Una/Unos/Unas,A/An/Some(masculine/feminine),grammar
-El coche rojo/La casa roja,The red car/The red house,grammar
-Yo/Tú/Él/Ella/Nosotros/Vosotros/Ellos,I/You/He/She/We/You all/They,grammar
-¿Dónde está el baño?,Where is the bathroom?,grammar
-No tengo dinero,I don't have money,grammar
-en/con/de/para,in/with/of/for,grammar
-Soy un estudiante/Estoy cansado,I am a student/I am tired,grammar
-Mi casa/Tu libro,My house/Your book,grammar
-Este/Esta/Estos/Estas,This/These,grammar
-Voy a comer,I am going to eat.,grammar
-y/o/pero,and/or/but,grammar
-
+Sentence,Question,Option_1,Option_2,Correct_Option
+Yo hablo español,What tense is this?,Present Tense,Past Tense,Present Tense
+Ella comió una manzana,What tense is this?,Future Tense,Past Tense,Past Tense
+Nosotros vamos al parque,What tense is this?,Present Tense,Conditional Tense,Present Tense
+Ellos estudiarán mañana,What tense is this?,Future Tense,Present Tense,Future Tense
+Tú escribiste una carta,What tense is this?,Past Tense,Future Tense,Past Tense
+Estoy leyendo un libro,What tense is this?,Present Progressive,Present Tense,Present Progressive
+Él cantará en el concierto,What tense is this?,Future Tense,Past Tense,Future Tense
+Compramos el coche,What tense is this?,Past Tense,Present Tense,Past Tense
+Vosotros viviréis en España,What tense is this?,Future Tense,Present Tense,Future Tense
+Usted va a la tienda,What tense is this?,Present Tense,Future Tense,Present Tense
 
