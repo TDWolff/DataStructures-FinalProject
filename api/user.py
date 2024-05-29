@@ -73,6 +73,7 @@ class UserAPI:
                 
                 ''' Find user '''
                 user = User.query.filter_by(_uid=uid).first()
+                print(user)
                 if user is None or not user.is_password(password):
                     return {'message': f"Invalid user id or password"}, 400
                 if user:
@@ -107,6 +108,19 @@ class UserAPI:
                         "message": "Something went wrong!",
                         "error": str(e),
                         "data": None
+                }, 500
+        
+        @token_required    
+        def delete(self, current_user):
+            try:
+                resp = Response("Logout successful")
+                resp.set_cookie("jwt", '', expires=0, secure=True, httponly=True, path='/', samesite='None')
+                return resp
+            except Exception as e:
+                return {
+                    "message": "failed",
+                    "error": str(e),
+                    "data": None
                 }, 500
 
             
